@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/owl.theme.default.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>RubyHome</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__container container">
+                <div class="header__logo-wrapper logo-wrapper">
+                    <img class="logo-wrapper__logo logo" src="./img/logo.png" alt="logo">
+                </div>
+                <nav class="header__menu-wrapper">
+                    <ul class="header__menu menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Properties</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                    </ul>
+                    <button class="header__button button">Contact us</button>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="search-section">
+                <div class="search-section__container container">
+                    <div class="search-section__left-block">
+                        <h1 class="search-section__title title-main">Find the perfect place to stay with your family</h1>
+                        <p class="search-section__text text-main">Buying a home is a life-changing experience, so shouldn’t your real estate agent be a life changer.</p>
+                    </div>
+                    <div class="search-section__right-block">
+                        <img class="search-section__img img" src="./img/building.png" alt="building">
+                    </div>
+                    <div class="search-section__search-block search-block">
+                        <div class="search-block__content">
+                            <div class="search-block__header buttons">
+                                <div id="buy" class="search-block__header-item text-main search-button button_active">Buy</div>
+                                <div id="rent" class="search-block__header-item text-main search-button">Rent</div>
+                                <div id="sell" class="search-block__header-item text-main search-button">Sell</div>
+                            </div>
+                            <div id="buy-block" class="search-block__select-blocks block block_active">
+                                <div class="selects">
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text">Location</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-location" class="select-block__select">
+                                            <option disabled value="Location">Location</option>
+                                            <option value="Dhaka">Dhaka</option>
+                                            <option value="Moscow">Moscow</option>
+                                            <option value="Paris">Paris</option>
+                                            <option value="Turkey">Turkey</option>
+                                            <option value="Berlin">Berlin</option>
+                                            <option value="Madrid">Madrid</option>
+                                        </select>
+                                        <div id="location" class="select-block__value">Dhaka</div>
+                                    </div>
+                                    <div class="select-block__separator"></div>
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text text_midle">Property type</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-type" class="select-block__select">
+                                            <option disabled value="Property type">Property type</option>
+                                            <option value="Duplex">Duplex</option>
+                                            <option value="Townhouse">Townhouse</option>
+                                            <option value="Flat">Flat</option>
+                                        </select>
+                                        <div id="type" class="select-block__value">Duplex</div>
+                                    </div>
+                                    <div class="select-block__separator"></div>
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text">Price</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-price" class="select-block__select">
+                                            <option disabled value="Price">Price</option>
+                                            <option value="$4000-$8000">$4000-$8000</option>
+                                            <option value="$8000-$10000">$8000-$10000</option>
+                                            <option value="$10000-$12000">$10000-$12000</option>
+                                            <option value="$12000-$18000">$12000-$18000</option>
+                                        </select>
+                                        <div id="price" class="select-block__value">$4000-$8000</div>
+                                    </div>
+                                </div>
+                                <button class="search-block__button button">
+                                    <img src="./icons/search.svg" alt="search">
+                                    <span>Search</span> 
+                                </button>
+                            </div>
+                            <div id="rent-block" class="search-block__select-blocks block">
+                                <div class="selects">
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text">Location</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-location" class="select-block__select">
+                                            <option disabled value="Location">Location&nbsp&nbsp</option>
+                                            <option value="Dhaka">Dhaka</option>
+                                            <option value="Moscow">Moscow</option>
+                                            <option value="Paris">Paris</option>
+                                            <option value="Turkey">Turkey</option>
+                                            <option value="Berlin">Berlin</option>
+                                            <option value="Madrid">Madrid</option>
+                                        </select>
+                                        <div id="location" class="select-block__value">Dhaka</div>
+                                    </div>
+                                    <div class="select-block__separator"></div>
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text text_midle">Property type</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-type" class="select-block__select">
+                                            <option disabled value="Property type">Property type&nbsp&nbsp</option>
+                                            <option value="Duplex">Duplex</option>
+                                            <option value="Townhouse">Townhouse</option>
+                                            <option value="Flat">Flat</option>
+                                        </select>
+                                        <div id="type" class="select-block__value">Duplex</div>
+                                    </div>
+                                    <div class="select-block__separator"></div>
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text">Price</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-price" class="select-block__select">
+                                            <option disabled value="Price">Price</option>
+                                            <option value="$4000-$8000">$4000-$8000</option>
+                                            <option value="$8000-$10000">$8000-$10000</option>
+                                            <option value="$10000-$12000">$10000-$12000</option>
+                                            <option value="$12000-$18000">$12000-$18000</option>
+                                        </select>
+                                        <div id="price" class="select-block__value">$4000-$8000</div>
+                                    </div>
+                                </div>
+                                <button class="search-block__button button">
+                                    <img src="./icons/search.svg" alt="search">
+                                    <span>Search</span> 
+                                </button>
+                            </div>
+                            <div id="sell-block" class="search-block__select-blocks block">
+                                <div class="selects">
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text">Location</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-location" class="select-block__select">
+                                            <option disabled value="Location">Location</option>
+                                            <option value="Dhaka">Dhaka</option>
+                                            <option value="Moscow">Moscow</option>
+                                            <option value="Paris">Paris</option>
+                                            <option value="Turkey">Turkey</option>
+                                            <option value="Berlin">Berlin</option>
+                                            <option value="Madrid">Madrid</option>
+                                        </select>
+                                        <div id="location" class="select-block__value">Dhaka</div>
+                                    </div>
+                                    <div class="select-block__separator"></div>
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text text_midle">Property type</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-type" class="select-block__select">
+                                            <option disabled value="Property type">Property type</option>
+                                            <option value="Duplex">Duplex</option>
+                                            <option value="Townhouse">Townhouse</option>
+                                            <option value="Flat">Flat</option>
+                                        </select>
+                                        <div id="type" class="select-block__value">Duplex</div>
+                                    </div>
+                                    <div class="select-block__separator"></div>
+                                    <div class="select-block">
+                                        <div class="select-block__head-select head-select">
+                                            <p class="head-select__text">Price</p>
+                                            <img class="head-select__arrow" src="./icons/select.svg" alt="select-arrow">
+                                        </div>
+                                        <select id="select-price" class="select-block__select">
+                                            <option disabled value="Price">Price</option>
+                                            <option value="$4000-$8000">$4000-$8000</option>
+                                            <option value="$8000-$10000">$8000-$10000</option>
+                                            <option value="$10000-$12000">$10000-$12000</option>
+                                            <option value="$12000-$18000">$12000-$18000</option>
+                                        </select>
+                                        <div id="price" class="select-block__value">$4000-$8000</div>
+                                    </div>
+                                </div>
+                                <button class="search-block__button button">
+                                    <img src="./icons/search.svg" alt="search">
+                                    <span>Search</span> 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                              <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />    
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                              </filter>
+                          </defs>
+                      </svg>
+                </div>
+            </section>
+            <section class="partners-section">
+                <div class="partners-section__container container">
+                    <div class="partners-section__title title title_first">
+                        <div class="title__text">Our Partners
+                            <img class="title__decor decor_first" src="./icons/title-decor.svg" alt="title decoration">
+                        </div>
+                    </div>
+                    <div class="partners-section__img-block img-block">
+                        <img class="img-block__img" src="./img/biotech.png" alt="biotech">
+                        <img class="img-block__img" src="./img/express.png" alt="express">
+                        <img class="img-block__img" src="./img/smilehome.png" alt="smilehome">
+                        <img class="img-block__img" src="./img/connect.png" alt="connect">
+                        <img class="img-block__img" src="./img/homebuild.png" alt="homebuild">
+                    </div>
+                </div>
+            </section>
+            <section class="popular-section">
+                <div class="popular-section__container container">
+                    <div class="popular-section__title title title_second">
+                        <div class="title__text">Popular Properties
+                            <img class="title__decor decor_second" src="./icons/title-decor.svg" alt="title decoration">
+                        </div>
+                        <div class="title__link-wrapper"><a class="title__link" href="#">VIEW ALL</a></div>
+                    </div>
+                    <div class="popular-section__homes-block homes-block">
+                        <!-- 1 -->
+                        <div class="homes-block__card card">
+                            <div class="card__img-wrapper img-wrapper">
+                                <img class="img-wrapper__img img" src="./img/home1.png" alt="home">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header-wrapper header-wrapper">
+                                    <p class="header-wrapper__title title_mini">Capital hill residence </p>
+                                    <svg id="like" class="like" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+                                    </svg>
+                                </div>
+                                <div class="card__location location">
+                                    <img id="like" src="./icons/location.svg" alt="location" class="location__img">
+                                    <span class="location__text text">East London</span>
+                                </div>
+                                <div class="card__comfort-wrapper comfort-wrapper">
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/bed.svg" alt="bed">
+                                        <div class="item__num">6</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/eat.svg" alt="eat">
+                                        <div class="item__num">2</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/shower.svg" alt="shower">
+                                        <div class="item__num">3</div>
+                                    </div>
+                                </div>
+                                <div class="card__footer-wrapper footer-wrapper">
+                                    <p class="footer-wrapper__price">$5527.00</p>
+                                    <button class="footer-wrapper__button button">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="homes-block__card card">
+                            <div class="card__img-wrapper img-wrapper">
+                                <img class="img-wrapper__img img" src="./img/home2.png" alt="home">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header-wrapper header-wrapper">
+                                    <p class="header-wrapper__title title_mini">Picket Fence Realty</p>
+                                    <svg id="like" class="like" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+                                    </svg>
+                                </div>
+                                <div class="card__location location">
+                                    <img src="./icons/location.svg" alt="location" class="location__img">
+                                    <span class="location__text text">East London</span>
+                                </div>
+                                <div class="card__comfort-wrapper comfort-wrapper">
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/bed.svg" alt="bed">
+                                        <div class="item__num">6</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/eat.svg" alt="eat">
+                                        <div class="item__num">2</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/shower.svg" alt="shower">
+                                        <div class="item__num">3</div>
+                                    </div>
+                                </div>
+                                <div class="card__footer-wrapper footer-wrapper">
+                                    <p class="footer-wrapper__price">$6727.00</p>
+                                    <button class="footer-wrapper__button button">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="homes-block__card card">
+                            <div class="card__img-wrapper img-wrapper">
+                                <img class="img-wrapper__img img" src="./img/home3.png" alt="home">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header-wrapper header-wrapper">
+                                    <p class="header-wrapper__title title_mini">Banyon Tree Realty</p>
+                                    <svg id="like" class="like" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+                                    </svg>
+                                </div>
+                                <div class="card__location location">
+                                    <img src="./icons/location.svg" alt="location" class="location__img">
+                                    <span class="location__text text">East London</span>
+                                </div>
+                                <div class="card__comfort-wrapper comfort-wrapper">
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/bed.svg" alt="bed">
+                                        <div class="item__num">6</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/eat.svg" alt="eat">
+                                        <div class="item__num">2</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/shower.svg" alt="shower">
+                                        <div class="item__num">3</div>
+                                    </div>
+                                </div>
+                                <div class="card__footer-wrapper footer-wrapper">
+                                    <p class="footer-wrapper__price">$4327.00</p>
+                                    <button class="footer-wrapper__button button">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="homes-block__card card">
+                            <div class="card__img-wrapper img-wrapper">
+                                <img class="img-wrapper__img img" src="./img/home4.png" alt="home">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header-wrapper header-wrapper">
+                                    <p class="header-wrapper__title title_mini">Corsair Real Estate</p>
+                                    <svg id="like" class="like" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+                                    </svg>
+                                </div>
+                                <div class="card__location location">
+                                    <img src="./icons/location.svg" alt="location" class="location__img">
+                                    <span class="location__text text">East London</span>
+                                </div>
+                                <div class="card__comfort-wrapper comfort-wrapper">
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/bed.svg" alt="bed">
+                                        <div class="item__num">6</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/eat.svg" alt="eat">
+                                        <div class="item__num">2</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/shower.svg" alt="shower">
+                                        <div class="item__num">3</div>
+                                    </div>
+                                </div>
+                                <div class="card__footer-wrapper footer-wrapper">
+                                    <p class="footer-wrapper__price">$4427.00</p>
+                                    <button class="footer-wrapper__button button">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="homes-block__card card">
+                            <div class="card__img-wrapper img-wrapper">
+                                <img class="img-wrapper__img img" src="./img/home5.png" alt="home">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header-wrapper header-wrapper">
+                                    <p class="header-wrapper__title title_mini">Sequoia Real Estate</p>
+                                    <svg id="like" class="like" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+                                    </svg>
+                                </div>
+                                <div class="card__location location">
+                                    <img src="./icons/location.svg" alt="location" class="location__img">
+                                    <span class="location__text text">East London</span>
+                                </div>
+                                <div class="card__comfort-wrapper comfort-wrapper">
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/bed.svg" alt="bed">
+                                        <div class="item__num">6</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/eat.svg" alt="eat">
+                                        <div class="item__num">2</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/shower.svg" alt="shower">
+                                        <div class="item__num">3</div>
+                                    </div>
+                                </div>
+                                <div class="card__footer-wrapper footer-wrapper">
+                                    <p class="footer-wrapper__price">$4527.00</p>
+                                    <button class="footer-wrapper__button button">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="homes-block__card card">
+                            <div class="card__img-wrapper img-wrapper">
+                                <img class="img-wrapper__img img" src="./img/home6.png" alt="home">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__header-wrapper header-wrapper">
+                                    <p class="header-wrapper__title title_mini">Strive Partners Realty</p>
+                                    <svg id="like" class="like" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+                                    </svg>
+                                </div>
+                                <div class="card__location location">
+                                    <img src="./icons/location.svg" alt="location" class="location__img">
+                                    <span class="location__text text">East London</span>
+                                </div>
+                                <div class="card__comfort-wrapper comfort-wrapper">
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/bed.svg" alt="bed">
+                                        <div class="item__num">6</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/eat.svg" alt="eat">
+                                        <div class="item__num">2</div>
+                                    </div>
+                                    <div class="comfort-wrapper__item item">
+                                        <img class="item__img" src="./icons/shower.svg" alt="shower">
+                                        <div class="item__num">3</div>
+                                    </div>
+                                </div>
+                                <div class="card__footer-wrapper footer-wrapper">
+                                    <p class="footer-wrapper__price">$5527.00</p>
+                                    <button class="footer-wrapper__button button">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-section">
+                <div class="featured-section__container container">
+                    <div class="featured-section__title title title_third">
+                        <div class="title__text">Property Featured
+                            <img class="title__decor decor_third" src="./icons/title-decor.svg" alt="title decoration">
+                        </div>
+                        <div class="title__description text">
+                            Real estate is a crowded field. But with the number of buyers purchasing homes through real estate agents and brokers growing there’s plenty of 
+                        </div>
+                    </div>
+                    <div class="featured-section__box box">
+                        <div class="box__left-column column">
+                            <div class="column__info-card info-card">
+                                <div class="info-card__img-wrapper">
+                                    <img class="info-card__img" src="./icons/security.svg" alt="security">
+                                </div>
+                                <div class="info-card__title title_mini">100% Security</div>
+                                <div class="info-card__text text">For many of us, buying a home is a dre and one not easily attainable. </div>
+                            </div>
+                            <div class="column__info-card info-card">
+                                <div class="info-card__img-wrapper">
+                                    <img class="info-card__img" src="./icons/conditioner.svg" alt="conditioner">
+                                </div>
+                                <div class="info-card__title title_mini">Free air conditioner</div>
+                                <div class="info-card__text text">For many of us, buying a home is a dre and one not easily attainable.  </div>
+                            </div>
+                            <div class="column__info-card info-card">
+                                <div class="info-card__img-wrapper">
+                                    <img class="info-card__img" src="./icons/flower.svg" alt="flower">
+                                </div>
+                                <div class="info-card__title title_mini">Flower garden</div>
+                                <div class="info-card__text text">For many of us, buying a home is a dre and one not easily attainable. </div>
+                            </div>
+                        </div>
+                        <div class="box__middle-column middle-column">
+                            <div class="middle-column__img-box">
+                                <img class="middle-column__img img" src="./img/skyscraper.png" alt="skyscraper">
+                            </div>
+                        </div>
+                        <div class="box__right-column column">
+                            <div class="column__info-card info-card">
+                                <div class="info-card__img-wrapper">
+                                    <img class="info-card__img" src="./icons/car.svg" alt="car">
+                                </div>
+                                <div class="info-card__title title_mini">Parkers & movers</div>
+                                <div class="info-card__text text">For many of us, buying a home is a dre and one not easily attainable. </div>
+                            </div>
+                            <div class="column__info-card info-card">
+                                <div class="info-card__img-wrapper">
+                                    <img class="info-card__img" src="./icons/sofa.svg" alt="sofa">
+                                </div>
+                                <div class="info-card__title title_mini">Rental furniture</div>
+                                <div class="info-card__text text">For many of us, buying a home is a dre and one not easily attainable.  </div>
+                            </div>
+                            <div class="column__info-card info-card">
+                                <div class="info-card__img-wrapper">
+                                    <img class="info-card__img" src="./icons/swimming.svg" alt="swimming">
+                                </div>
+                                <div class="info-card__title title_mini">Swimming pool</div>
+                                <div class="info-card__text text">For many of us, buying a home is a dre and one not easily attainable. </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="customers-section">
+                <div class="customers-section__container container">
+                    <div class="customers-section__title title title_third">
+                        <div class="title__link-wrapper"><a class="title__link" href="#">REVIEWS</a></div>
+                        <div class="title__text">Our valuable customer says
+                            <img class="title__decor decor_fourth" src="./icons/title-decor.svg" alt="title decoration">
+                        </div>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo1.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Justin Lee</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__header">
+                                <div class="carousel__photo-wrapper photo-wrapper">
+                                    <img class="photo-wrapper__img img" src="./img/photo2.png" alt="photo">
+                                </div>
+                                <div class="carousel__person person">
+                                    <div class="person__name title_mini">Angel Cathe</div>
+                                    <div class="person__profession text">Products Designer at Ito</div>
+                                </div>
+                                <div class="carousel__decor">
+                                    <img src="./icons/quotes.svg" alt="quotes">
+                                </div>
+                            </div>
+                            <div class="carousel__text text">A good real estate agent doesn’t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought be 
+                                Bringing It All Together there.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="form-section__container container">
+                    <div class="circle circle_one"></div>
+                    <div class="circle circle_two"></div>
+                    <div class="form-section__content">
+                        <div class="form-section__title">Get listed your home as  a owner</div>
+                        <div class="form-section__text text text_white">Here is a list of the greatest real estate company slogans of all-time. These catchy slogans are followed by the Greatest Real Estate.</div>
+                    </div>
+                    <form action="#" class="form-section__form form">
+                        <div class="form__block">
+                            <input class="form__input" type="search" name="q" placeholder="Enter email address" required>
+                            <button class="form__button button">Subscribe</button>
+                          </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer-section">
+                <div class="footer-section__container container">
+                    <div class="footer-section__main-block main-block">
+                        <div class="main-block__logo-wrapper logo-wrapper">
+                            <img class="logo-wrapper__logo logo logo_footer" src="./img/logo.png" alt="logo">
+                        </div>
+                        <div class="main-block__text text">Contrary to popular  is not simply random text. It has </div>
+                        <div class="main-block__contacts contacts">
+                            <a href="#" class="contacts__circle">
+                                <img class="contacts__img" src="./icons/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#" class="contacts__circle">
+                                <img class="contacts__img" src="./icons/instagram.svg" alt="instagram">
+                            </a>
+                            <a href="#" class="contacts__circle">
+                                <img class="contacts__img" src="./icons/twitter.svg" alt="twitter">
+                            </a>
+                            <a href="#" class="contacts__circle">
+                                <img class="contacts__img" src="./icons/youtube.svg" alt="youtube">
+                            </a>
+                            <a href="#" class="contacts__circle">
+                                <img class="contacts__img" src="./icons/linkedin.svg" alt="linkedin">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-section__block block">
+                        <div class="block__title">About</div>
+                        <div class="block__items">
+                            <a class="block__item" href="#">Company</a>
+                            <a class="block__item" href="#">Team</a>
+                            <a class="block__item" href="#">Career</a>
+                            <a class="block__item"href="#">Blogs</a>
+                        </div>
+                    </div>
+                    <div class="footer-section__block block">
+                        <div class="block__title">Products</div>
+                        <div class="block__items">
+                            <a class="block__item" href="#">E-Books</a>
+                            <a class="block__item" href="#">Preasantation</a>
+                            <a class="block__item" href="#">Management</a>
+                            <a class="block__item"href="#">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="footer-section__block block">
+                        <div class="block__title">Address</div>
+                        <div class="block__items">
+                            <a class="block__item item_regular" href="#">Country Delevery</a>
+                            <a class="block__item item_regular" href="#">Counter Beach Post</a>
+                            <a class="block__item" href="#">www.itobd.com</a>
+                            <a class="block__item item_regular" href="tel:+880176565655">+880176565655</a>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </main>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
