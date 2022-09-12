@@ -522,18 +522,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     max-width: 558px;
 }
 
+.swiper-wrapper {
+    margin-bottom: 40px;
+}
+
+.swiper-pagination {
+    position: static;
+    margin: 0 auto;
+}
+
 .carousel__header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.carousel__photo-wrapper {
-    margin-right: 31px;
-}
-
-.carousel__person {
-    margin-right: 130px;
+.carousel__author {
+    display: flex;
+    align-items: center;
+    gap: 31px;
 }
 
 .person__name {
@@ -784,12 +792,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .customers-section__container {
         padding: 100px 20px;
     }
-    .carousel__person {
-        margin-right: 40px;
-    }
-    .photo-wrapper {
-        min-width: 50px;
-    }
     .title_mini {
         font-size: 16px;
     }
@@ -820,6 +822,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
     .search-section__title {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 935px) {
+    .carousel__img {
+        width: 44px;
+    }
+    .carousel__author {
+        gap: 21px;
+    }
+    .carousel__person {
+        max-width: 140px;
     }
 }
 
@@ -881,6 +895,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
     .search-block__content {
         width: 650px;
+    }
+    .photo-wrapper__img {
+        width: 60px;
     }
 }
 
@@ -979,11 +996,33 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .select-block__separator {
         display: none;
     }
+    .carousel__decor {
+        display: none;
+    }
 }
 
 @media (max-width: 704px) {
     .circle_two {
         top: 385px;
+    }
+}
+
+@media (max-width: 669px) {
+    .decor_fourth {
+        top: -15px;
+        left: calc(50% - 272px);
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel__decor {
+        display: block;
+    }
+    .carousel__img {
+        width: 49px;
+    }
+    .carousel__person {
+        max-width: unset;
     }
 }
 
@@ -1045,6 +1084,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
     .footer-section__container {
         gap: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+    .carousel__decor {
+        display: none;
     }
 }
 

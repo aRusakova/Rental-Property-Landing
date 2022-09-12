@@ -1,11 +1,17 @@
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        margin: 30,
-        dots: true,
-        mouseDrag: true,
-        touchDrag: true,
-        responsive:{ 0:{ items:1}, 600:{ items:2}}
-    })
+const swiper = new Swiper(".swiper", {
+    spaceBetween: 31,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+          },
+        600: {
+            slidesPerView: 2,
+        },
+    }
 });
 
 const likes = document.querySelectorAll("#like");
